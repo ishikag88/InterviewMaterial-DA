@@ -33,3 +33,24 @@
 23. Describe solving a problem with incomplete or conflicting information.  
 24. Talk about breaking down a long-term problem into manageable parts.  
 25. Recall working with multiple teams or stakeholders to solve a challenging problem.  
+
+# Learning/Growth Mindset Stories  
+26. When did you have to learn a new skill or tech for a project? How did you approach it?  
+27. Share proactively learning something unrelated to your role and its impact.  
+28. Describe adapting to a major change in your tech stack or work environment.  
+29. Talk about learning from someone less experienced and what you gained from it.  
+30. Share receiving difficult feedback and the steps you took to improve.  
+
+# Leadership Stories  
+31. Describe leading a team through a challenging project. What obstacles did you face?  
+32. Share making an unpopular decision as a leader and handling the pushback.  
+33. Talk about motivating a team with low morale. How did you lift them up?  
+34. Recall mentoring or guiding an underperforming teammate and the outcome.  
+35. Describe implementing a new initiative or program and measuring its success.  
+
+# Time Management Stories  
+36. Share a time when you managed multiple high-priority tasks—how did you prioritize?  
+37. Describe reshuffling priorities when an urgent task came up unexpectedly.  
+38. Talk about delegating tasks to meet a tight deadline while ensuring quality.  
+39. Recall making a critical decision under intense time pressure. How did you balance speed and accuracy?  
+40. Share adopting a time management tool or technique that improved your productivity.  

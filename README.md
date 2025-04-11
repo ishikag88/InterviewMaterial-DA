@@ -32,3 +32,39 @@ Most Asked SQL Interview Questions:
 8. Write a SQL query to transpose rows into columns.
 9. Write a SQL query to get the cumulative sum of a column.
 10. How do you generate random rows from a table?
+
+
+Can you answer these Python - Pandas interview questions?
+
+These were asked at a top service-based company for Data Analyst role:
+
+Sample DataFrame:
+
+data = {
+ 'EmployeeID': [1, 2, 3, 4, 5],
+ 'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+ 'Department': ['HR', 'IT', 'IT', 'HR', 'Finance'],
+ 'Salary': [60000, 70000, 80000, 65000, 75000],
+ 'JoiningDate': ['2020-01-15', '2019-06-20', '2018-07-23', '2020-02-10', '2021-03-15'],
+ 'PerformanceScore': [3, 4, 2, 5, 3]
+}
+
+Interview Questions:
+
+1. How can you calculate the average salary for each department?
+
+2. Write a function to find the employee with the highest performance score in each department.
+
+3. How would you add a new column that represents the number of years each employee has been with the company based on the 'JoiningDate'?
+
+4. Create a pivot table to display the total salary and average performance score for each department.
+
+5. How would you create a new DataFrame containing only the employees from the IT department who have a performance score greater than 3?
+
+6. Describe how to perform an inner merge of this DataFrame with another DataFrame containing employee bonus information based on 'EmployeeID'.
+
+7. How can you calculate the cumulative sum of the 'PerformanceScore' column grouped by 'Department'?
+
+8. Write a function to rank employees within each department based on their 'Salary'.
+
+9. How can you filter the DataFrame to show only employees who have been with the company for more than 2 years?

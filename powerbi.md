@@ -479,3 +479,209 @@ Full Outer Join – All from both
 
 Anti Joins – Return non-matching rows
 
+✅ Q81–93: Final Questions from Your PDF
+81. What is a Button in Power BI?
+Buttons are interactive UI elements used for navigation, bookmarking, or actions like showing/hiding visuals.
+👉 You can assign actions like “Go to Page”, “Bookmark”, or “Drill Through”.
+
+82. What is Custom Sort in Power BI?
+Allows you to define a custom order of values instead of default alphabetical or numerical order.
+📌 Example: Sort months as Jan–Dec using a separate column with month numbers (1 to 12).
+
+83. Where is data stored in Power BI?
+Data is stored in:
+
+Fact Tables: Quantitative transactional data
+
+Dimension Tables: Descriptive categories (e.g., product, region)
+Power BI stores these internally using VertiPaq, a high-performance, columnar in-memory engine.
+
+84. What are Many-to-Many relationships in Power BI? How do you handle them?
+When both tables have non-unique keys.
+Handled by:
+
+Introducing a Bridge Table
+
+Using DAX functions like TREATAS()
+
+Creating composite models with "Many-to-Many" relationship options
+
+85. Difference between RELATED() and RELATEDTABLE()?
+
+Function	Use Case
+RELATED()	Brings a column from a related table (many → one)
+RELATEDTABLE()	Returns a table from related records (one → many)
+🔍 Example:
+
+DAX
+Copy
+Edit
+RELATED(Customer[Name])  
+COUNTROWS(RELATEDTABLE(Sales))
+86. How does data refresh work in Power BI?
+There are two types:
+
+Manual Refresh: Triggered by the user
+
+Scheduled Refresh: Set intervals (8/day for Pro, 48/day for Premium)
+📌 Used in Power BI Service under Settings → Dataset → Scheduled Refresh
+
+87. What issues have you faced in projects?
+
+Large dataset load delays
+
+Complex joins affecting performance
+
+Incorrect DAX causing incorrect totals
+✅ Solutions:
+
+Aggregation tables
+
+Star schema modeling
+
+Performance analyzer & DAX optimization
+
+88. What were your roles and responsibilities in your Power BI project?
+
+Connecting and cleaning data
+
+Building reports and dashboards
+
+Creating DAX measures
+
+Implementing RLS
+
+Scheduling refreshes and sharing via Power BI Service
+
+Communicating with stakeholders for requirements
+
+89. How do you interact with clients or stakeholders?
+
+Daily standups / calls
+
+BRD (Business Requirement Documents)
+
+Demos or walkthroughs
+
+Collecting feedback and refining reports
+
+90. How long does it take to create 10 measures, 10 reports, and 30 visuals?
+✅ Depends on:
+
+Data readiness
+
+Complexity of visuals
+
+Business logic
+Rough estimate:
+
+If data model is ready: 1–2 weeks
+
+If starting from scratch: 2–4 weeks
+
+91. What custom visuals have you used?
+
+Dot Plot
+
+Heatmap
+
+Bullet Chart
+
+Hierarchy Slicer
+
+KPI Indicator
+Downloaded from the Microsoft AppSource marketplace.
+
+92. Common visuals used in Power BI?
+
+Card
+
+Table
+
+Matrix
+
+KPI
+
+Pie/Donut chart
+
+Tree Map
+
+Bar/Column Charts
+
+Line Chart
+
+Map
+
+Waterfall
+
+Multi-row Card
+
+93. What’s the best licensing option for an organization with 700 users (100 developers + 600 viewers)?
+
+100 Developers → Power BI Pro
+
+600 Viewers → Power BI Premium (view-only access)
+This setup is cost-effective and allows shared capacity.
+
+🧠 Bonus: 10 Advanced Questions to Impress Interviewers
+1. What is a Star Schema and why is it preferred in Power BI?
+A Star Schema has a central fact table connected to dimension tables.
+✅ Benefits: Better performance, easier relationships, simpler DAX
+
+2. What is a Composite Model?
+Composite models allow mixing Import and DirectQuery sources in a single report.
+🔁 Offers flexibility in working with real-time + preloaded data.
+
+3. What is CALCULATE() in DAX?
+CALCULATE() modifies the context of a calculation. It’s the most powerful DAX function.
+Example:
+
+DAX
+Copy
+Edit
+Sales_East = CALCULATE(SUM(Sales[Amount]), Region = "East")
+4. What is FILTER() in DAX? How is it used?
+Returns a filtered table. Often used inside CALCULATE()
+Example:
+
+DAX
+Copy
+Edit
+TopCustomers = CALCULATE(SUM(Sales[Amount]), FILTER(Customer, Sales[Amount] > 1000))
+5. How do you optimize a slow Power BI report?
+✅ Techniques:
+
+Use star schema
+
+Remove unused columns
+
+Use measures instead of calculated columns
+
+Use summarized tables
+
+Optimize DAX (avoid row context in loops)
+
+6. What are Aggregation Tables and why use them?
+Pre-aggregated tables (e.g., monthly totals) reduce load on base data.
+Power BI can automatically switch to aggregation if defined using Manage Aggregations.
+
+7. What is the difference between DAX and M Language?
+
+DAX	M Language
+Used in data model	Used in Power Query
+Calculates metrics	Cleans/transforms data
+Row or filter context	Step-by-step transformation logic
+8. What’s the role of Performance Analyzer in Power BI?
+Built-in tool to measure load time for visuals, DAX queries, etc.
+👉 Helps identify and optimize slow visuals.
+
+9. What is Incremental Refresh?
+Refresh only new or changed data, not the entire dataset.
+Available in Premium or Pro with parameters (Date/Time filters).
+
+10. What is the difference between ALL() and REMOVEFILTERS() in DAX?
+Both remove filters, but:
+
+ALL() removes filters and returns the entire table
+
+REMOVEFILTERS() only clears filters without modifying table shape
